@@ -1,0 +1,26 @@
+{
+  "name": "handlebars-csp-hash",
+  "version": "0.1.0",
+  "description": "Handlebars helper for generating Content-Security-Policy hash values",
+  "author": "Mike Hall",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "files": ["index.js"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikehall314/handlebars-csp-hash.git"
+  },
+  "keywords": [
+    "handlebars",
+    "csp",
+    "content security policy",
+    "hash",
+    "sha256","sha384","sha512"
+  ],
+  "bugs": {
+    "url": "https://github.com/mikehall314/handlebars-csp-hash/issues"
+  }
+}
