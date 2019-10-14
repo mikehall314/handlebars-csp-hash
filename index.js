@@ -13,7 +13,6 @@ const crypto = require("crypto");
 
 function register(hbs) {
     hbs.registerHelper("csp-hash", (filename, algo) => {
-
         // If algo is not set, then set to SHA256
         if (typeof algo !== "string") {
             algo = "sha256";
@@ -27,7 +26,7 @@ function register(hbs) {
         }
 
         // Load and hash the file
-        const content = fs.readFileSync(filename, "utf-8");
+        const content = fs.readFileSync(filename, "utf-8"); // eslint-disable-line
         const hash = crypto
             .createHash(algo)
             .update(content)
